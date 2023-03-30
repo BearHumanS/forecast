@@ -1,0 +1,178 @@
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Header */
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  header img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  /* Main Content */
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Forecast List */
+  
+  ul {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  li .date {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  li .icon {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  li .description {
+    font-size: 16px;
+  }
+  
+  li .temp {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  li .pop {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  @media screen and (max-width: 600px) {
+    main {
+      padding: 10px;
+    }
+  
+    header h1 {
+      font-size: 20px;
+    }
+  
+    li .date {
+      font-size: 16px;
+    }
+  
+    li .icon {
+      height: 40px;
+    }
+  
+    li .description {
+      font-size: 14px;
+    }
+  
+    li .temp {
+      font-size: 16px;
+    }
+  
+    li .pop {
+      font-size: 14px;
+    }
+  }
+
+  #weather {
+    font-size: 0;
+  }
+  
+
+  
+
+  #a {
+    width: 250px;
+    height: 400px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+#city {
+  text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#condition {
+    font-size: 0px;
+    font-weight: bold;
+}
+
+#weather-image {
+    height: 100px;
+}
+
+#temperature {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#humidity {
+    font-size: 24px;
+}
+
+#wind {
+    font-size: 24px;
+}
